@@ -1,0 +1,121 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Result Management System
+  style.
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    }
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    }
+    nav {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+    }
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    }
+    section {
+    padding: 20px;
+    }
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    }
+    th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    }
+    th {
+    background-color: #555;
+    color: #fff;
+    }
+header
+  h1 Result Management System
+nav
+  a(href='/') Home
+  a(href='/login') Login
+section#students
+  h2 Manage Students
+  table
+    thead
+      tr
+        th ID
+        th Name
+        th DOB
+    tbody
+      // Placeholder data, replace with actual data from the database
+      tr
+        td 1
+        td John Doe
+        td 1990-01-01
+      tr
+        td 2
+        td Jane Doe
+        td 1992-05-15
+section#courses
+  h2 Manage Courses
+  table
+    thead
+      tr
+        th ID
+        th Course Name
+        th Code
+    tbody
+      // Placeholder data, replace with actual data from the database
+      tr
+        td 1
+        td Mathematics
+        td MATH101
+      tr
+        td 2
+        td English
+        td ENG101
+section#results
+  h2 Manage Results
+  table
+    thead
+      tr
+        th ID
+        th Student Name
+        th Course Name
+        th Score
+        th Average
+    tbody
+      // Placeholder data, replace with actual data from the database
+      tr
+        td 1
+        td John Doe
+        td Mathematics
+        td 85
+        td  A
+      tr
+        td 2
+        td Jane Doe
+        td English
+        td 92
+footer
+  p &copy; 2024 Result Management System
